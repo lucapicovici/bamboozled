@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bamboozled Demo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <a href="index.html">Back</a>
+        <h1 id="titleLeaderboard">Leaderboard</h1>
+        <ul id="list">
+        </ul>
+
+        <script>
+            window.onload = function() {
+                var list = document.getElementById("list");
+                var playerNames = JSON.parse(localStorage.getItem("playerNames")) || [];
+
+                for (var i = 0; i < playerNames.length; i++) {
+                    list.innerHTML += "<li>" + playerNames[i].name + ": " + playerNames[i].score + "</li>"
+                }
+            }
+        </script>
+    </body>
+</html>

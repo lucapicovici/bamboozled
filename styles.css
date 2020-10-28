@@ -1,0 +1,125 @@
+/* Global */
+
+a {
+    text-decoration: none;
+}
+
+/* Game Page  */
+
+#title {
+    color: red;
+    text-align: center;
+}
+
+.options-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.optionBox {
+    /* BBZLD_01: to fix word break if string is long */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffd663;
+    width: 200px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    word-break: break-all;
+}
+
+#question {
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#btnCheck {
+    height: 50px;
+    width: 150px;
+    background-color: green;
+}
+
+#btnGenerate {
+    height: 50px;
+    width: 150px;
+}
+
+#btnCheck, #btnGenerate {
+    border-radius: 5px;
+    margin: 0;
+}
+
+#timer {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+#scoreText {
+    text-align: center;
+}
+
+/* Index Page */
+
+#titleIndex {
+    color: orange;
+    text-align: center;
+}
+
+.buttonsIndex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#startIndex, #leaderboardIndex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 150px;
+    background-color: green;
+    border-radius: 7px;
+    margin: 5px;
+}
+
+/* Leaderboard Page */
+
+#titleLeaderboard {
+    color: purple;
+    text-align: center;
+}
+
+/* Stop Game Page  */
+
+#titleStopGame, #scoreStopGame {
+    text-align: center;
+}
+
+#formGroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#playerName {
+    font-size: 26px;
+}
+
+#btnSave {
+    font-size: 20px;
+    margin-top: 30px;
+    height: 50px;
+    width: 100px;
+}

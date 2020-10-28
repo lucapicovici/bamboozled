@@ -1,95 +1,109 @@
 var questions = [
     {
-        q: "When is my birthday?",
+        q: "Cand e ziua lui Luca?",
         a: "15 Dec 1998",
-        first: "blabla",
-        second: "15 Aug 1999",
-        third: "IDK"
+        first: "13 Dec 1999",
+        second: "16 Nov 1998",
+        third: "Vezi Facebook"
     },
     {
-        q: "When is YOUR birthday?",
-        a: "30 Aug 2000",
-        first: "I swear I don't know",
-        second: "Leave me alone",
-        third: "Check Facebook"
+        q: "Cate picioare are un caine care sta in doua picioare?",
+        a: "Minim 2, maxim 4",
+        first: "Maxim 4, minim 5",
+        second: "Blana de samur",
+        third: "2,50"
     },
     {
-        q: "What is a birthday?",
-        a: "Party",
-        first: "Ask Google",
-        second: "Leave me alone",
-        third: "Lasagnas"
+        q: "Ce e o zi de nastere?",
+        a: "Acea zi din an cand ti se duc 50 lei",
+        first: "Lei 50 ti se duc",
+        second: "Cand trebuie sa stai pana la 11 noaptea sa ii scrii la multi ani",
+        third: "Imi place cand cineva imi face cinste"
     },
     {
         q: "Ce trece peste apa si nu face valuri?",
         a: "Podul",
         first: "Alte molecule de apa",
-        second: "Podul",
+        second: "Iisus din Nazaret",
         third: "Nu stiu, mi-e frica de apa"
     },
     {
         q: "Daca fierb 3 oua in 10 minute, 56 de oua in cateva minute fierb?",
         a: "Tot 10 minute daca incap in oala",
-        first: "",
-        second: "",
-        third: ""
+        first: "Cine ar fierbe 56 de oua deodata?",
+        second: "Nu se pune problema pentru ca doua ajung la o masa",
+        third: "Atentie la urticarie"
     },
     {
         q: "De ce Robotii si nu Unguru Bulan?",
-        a: "Pentru ca Robotii au grafica mai buna, un limbaj mai sofisticat si glume mai inteligente",
-        first: "",
-        second: "",
-        third: ""
+        a: "Doamna, cat costa un picur de benzina?",
+        first: "Pentru ca Robotii te duce cu gandul la AI, si AI-ul ii smecher",
+        second: "Pentru ca Robotii au grafica mai buna, un limbaj mai sofisticat si glume mai inteligente",
+        third: "Creative Monkeyz"
     },
     {
         q: "De ce Trump arata ca o portocala?",
         a: "Asa s-a nascut",
-        first: "",
-        second: "",
-        third: ""
+        first: "De la tratamentul anti-COVID",
+        second: "Stra-stra-strabunicul lui manca multe fructe",
+        third: "De ce Trump si nu Hillary?"
     },
     {
         q: "Bolognaise sau carbonara?",
-        a: "Carbonara",
-        first: "",
-        second: "",
-        third: ""
+        a: "Bolognaise, ca-i cu porodici",
+        first: "Bai, dar voi ati incercat Pesto?",
+        second: "Cu sau fara, macaroanele sunt tot macaroane",
+        third: "Carbonara"
     },
     {
         q: "De ce platim apa daca e vitala?",
         a: "Se numeste capitalism",
-        first: "",
-        second: "",
-        third: ""
+        first: "Ca sa nu o luam gratis",
+        second: "Ca sa gratis nu o luam",
+        third: "Pentru ca trebuie"
     },
     {
         q: "De ce e luna alba si nu galbena?",
         a: "Ca sa moara de ciuda Marte",
-        first: "",
-        second: "",
-        third: ""
+        first: "Ca n-o stat destul la soare",
+        second: "Lipsa de calciu si vitamina D",
+        third: "Nu stiu"
     },
     {
         q: "De ce pamantul nu-i plat?",
-        a: "Ca are colturi",
-        first: "",
-        second: "",
-        third: ""
+        a: "Bai Samuele ce-ai facut ba",
+        first: "Pentru ca e rotund",
+        second: "Pentru ca societatea nu te accepta daca esti plat(a)",
+        third: "Ca are colturi"
     },
     {
         q: "De ce moldovenii fac muzica mai buna decat romanii?",
         a: "Pentru ca rusii au cultura mai vasta",
-        first: "",
-        second: "",
-        third: ""
+        first: "Moldovenii s-au nascut",
+        second: "Dieselll",
+        third: "Pentru ca o fac din suflet"
     },
     {
         q: "Esti de parere ca in Transilvania am trai mai bine daca ne-am lua independenta?",
         a: "Am trai mai bine si daca am renunta doar la Teleorman",
-        first: "",
-        second: "",
-        third: ""
-    }
+        first: "Nu stiu, dar mie imi place la Cluj.",
+        second: "Le a magyarokkal!",
+        third: "Eu zic ca suntem ok."
+    },
+    {
+        q: "Natura sau Universul?",
+        a: "Ambele",
+        first: "Pai da' nu poti sa alegi",
+        second: "Imi plac padurile toamna",
+        third: "Sau"
+    },
+    {
+        q: "Caragiale sau Chaplin",
+        a: "Amandoi au mustata",
+        first: "Unul mai batran ca altul",
+        second: "Chaplin",
+        third: "Caragiale"
+    },
 ];
 
 var btnSkip = document.querySelector("#btnSkip");
@@ -110,7 +124,7 @@ window.onload = function() {
     score = 0;
     scoreElem.innerText = 0;
     generateQuestion();
-    startTimer(60000, timer);
+    startTimer(120, timer);
     isTimerRunning = true;
 }
 

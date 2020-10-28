@@ -4,9 +4,13 @@
         <title>Bamboozled Demo</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@300&display=swap" rel="stylesheet">
     </head>
     <body>
-        <a href="index.html">Back</a>
+        <div class="nav">
+            <a href="index.html">Back</a>
+            <p id="resetLeaderboard">Reset</p>
+        </div>
         <h1 id="titleLeaderboard">Leaderboard</h1>
         <ul id="list">
         </ul>
@@ -20,6 +24,11 @@
                     list.innerHTML += "<li>" + playerNames[i].name + ": " + playerNames[i].score + "</li>"
                 }
             }
+
+            var resetLeaderboard = document.getElementById("resetLeaderboard");
+            resetLeaderboard.addEventListener("click", function(){
+                localStorage.clear();
+            });
         </script>
     </body>
 </html>

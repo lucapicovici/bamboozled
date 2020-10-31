@@ -92,8 +92,13 @@ a {
 
 /* Stop Game Page  */
 
-#titleStopGame, #scoreStopGame {
+#titleStopGame, #scoreHeader {
     text-align: center;
+    margin-bottom: 25px;
+}
+
+#score {
+    font-size: 24px;
 }
 
 #formGroup {
@@ -105,6 +110,7 @@ a {
 
 #playerName {
     font-size: 26px;
+    width: 75%;
 }
 
 #btnSave {

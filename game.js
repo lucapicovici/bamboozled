@@ -1,108 +1,81 @@
 var questions = [
     {
-        q: "Cand e ziua lui Luca?",
+        q: "Când e ziua lui Luca?",
         a: "15 Dec 1998",
         first: "13 Dec 1999",
-        second: "16 Nov 1998",
-        third: "Vezi Facebook"
+        second: "Vezi Facebook",
     },
     {
-        q: "Cate picioare are un caine care sta in doua picioare?",
+        q: "Câte picioare are un câine care stă în două picioare?",
         a: "Minim 2, maxim 4",
         first: "Maxim 4, minim 5",
-        second: "Blana de samur",
-        third: "2,50"
+        second: "2,50"
     },
     {
-        q: "Ce e o zi de nastere?",
-        a: "Acea zi din an cand ti se duc 50 lei",
-        first: "Lei 50 ti se duc",
-        second: "Cand trebuie sa stai pana la 11 noaptea sa ii scrii la multi ani",
-        third: "Imi place cand cineva imi face cinste"
+        q: "Ce e o zi de naștere?",
+        a: "Tot o zi, doar că ți se duc 50 lei",
+        first: "O zi",
+        second: "Când trebuie să stai până la 11 noaptea să îi scrii la mulți ani"
     },
     {
-        q: "Ce trece peste apa si nu face valuri?",
+        q: "Ce trece peste apă și nu face valuri?",
         a: "Podul",
-        first: "Alte molecule de apa",
-        second: "Iisus din Nazaret",
-        third: "Nu stiu, mi-e frica de apa"
+        first: "Nu știu, mi-e frică de apă",
+        second: "Iisus din Nazaret"
     },
     {
-        q: "Daca fierb 3 oua in 10 minute, 56 de oua in cateva minute fierb?",
-        a: "Tot 10 minute daca incap in oala",
-        first: "Cine ar fierbe 56 de oua deodata?",
-        second: "Nu se pune problema pentru ca doua ajung la o masa",
-        third: "Atentie la urticarie"
+        q: "Dacă fierb 3 ouă în 10 minute, 56 de ouă în câte minute fierb?",
+        a: "Tot 10 minute dacă încap în oală",
+        first: "Cine ar fierbe 56 de ouă deodată?",
+        second: "Nu se pune problema pentru că două ajung la o masă"
     },
     {
-        q: "De ce Robotii si nu Unguru Bulan?",
-        a: "Doamna, cat costa un picur de benzina?",
-        first: "Pentru ca Robotii te duce cu gandul la AI, si AI-ul ii smecher",
-        second: "Pentru ca Robotii au grafica mai buna, un limbaj mai sofisticat si glume mai inteligente",
-        third: "Creative Monkeyz"
+        q: "De ce Roboții și nu Unguru Bulan?",
+        a: "Pentru că Roboții au grafică mai bună, un limbaj mai sofisticat și glume mai inteligente",
+        first: "Pentru că Robotii te duce cu gândul la AI, și AI-ul îi șmecher",
+        second: "Creative Monkeyz"
     },
     {
-        q: "De ce Trump arata ca o portocala?",
-        a: "Asa s-a nascut",
+        q: "De ce Trump arată ca o portocală?",
+        a: "Așa s-a născut",
         first: "De la tratamentul anti-COVID",
-        second: "Stra-stra-strabunicul lui manca multe fructe",
-        third: "De ce Trump si nu Hillary?"
+        second: "Taică-so a încercat tot felul de jucării sexuale"
     },
     {
         q: "Bolognaise sau carbonara?",
-        a: "Bolognaise, ca-i cu porodici",
-        first: "Bai, dar voi ati incercat Pesto?",
-        second: "Cu sau fara, macaroanele sunt tot macaroane",
-        third: "Carbonara"
+        a: "Bolognaise, că-i cu porodici",
+        first: "Pesto",
+        second: "Carbonara"
     },
     {
-        q: "De ce platim apa daca e vitala?",
-        a: "Se numeste capitalism",
-        first: "Ca sa nu o luam gratis",
-        second: "Ca sa gratis nu o luam",
-        third: "Pentru ca trebuie"
+        q: "De ce plătim apa dacă e vitală?",
+        a: "Se numește capitalism",
+        first: "Ca să nu o luăm gratis",
+        second: "Ca să gratis nu o luăm"
     },
     {
-        q: "De ce e luna alba si nu galbena?",
-        a: "Ca sa moara de ciuda Marte",
-        first: "Ca n-o stat destul la soare",
-        second: "Lipsa de calciu si vitamina D",
-        third: "Nu stiu"
+        q: "De ce e luna albă și nu galbenă?",
+        a: "Ca să moară de ciudă Marte",
+        first: "Că n-o stat destul la soare",
+        second: "Lipsă de calciu și vitamina D"
     },
     {
-        q: "De ce pamantul nu-i plat?",
-        a: "Bai Samuele ce-ai facut ba",
-        first: "Pentru ca e rotund",
-        second: "Pentru ca societatea nu te accepta daca esti plat(a)",
-        third: "Ca are colturi"
+        q: "De ce pământul nu-i plat?",
+        a: "Pentru că e rotund",
+        first: "Băi Samuele, ce-ai facut bă",
+        second: "Pentru că societatea nu te acceptă daca ești plat(ă)"
     },
     {
-        q: "De ce moldovenii fac muzica mai buna decat romanii?",
-        a: "Pentru ca rusii au cultura mai vasta",
-        first: "Moldovenii s-au nascut",
-        second: "Dieselll",
-        third: "Pentru ca o fac din suflet"
-    },
-    {
-        q: "Esti de parere ca in Transilvania am trai mai bine daca ne-am lua independenta?",
-        a: "Am trai mai bine si daca am renunta doar la Teleorman",
-        first: "Nu stiu, dar mie imi place la Cluj.",
-        second: "Le a magyarokkal!",
-        third: "Eu zic ca suntem ok."
-    },
-    {
-        q: "Natura sau Universul?",
-        a: "Ambele",
-        first: "Pai da' nu poti sa alegi",
-        second: "Imi plac padurile toamna",
-        third: "Sau"
+        q: "De ce moldovenii fac muzică mai bună decât românii?",
+        a: "Pentru că rușii au cultura mai vastă",
+        first: "Moldovenii s-au născut",
+        second: "Dieselll"
     },
     {
         q: "Caragiale sau Chaplin",
-        a: "Amandoi au mustata",
-        first: "Unul mai batran ca altul",
-        second: "Chaplin",
-        third: "Caragiale"
+        a: "Amandoi au mustață",
+        first: "Caragiale",
+        second: "Chaplin"
     },
 ];
 
@@ -112,7 +85,6 @@ var optionBox = document.querySelector(".optionBox");
 var option1 = document.querySelector("#option1");
 var option2 = document.querySelector("#option2");
 var option3 = document.querySelector("#option3");
-var option4 = document.querySelector("#option4");
 var timer = document.querySelector("#timer");
 var isTimerRunning = false;
 var scoreElem = document.querySelector("#score");
@@ -124,7 +96,7 @@ window.onload = function() {
     score = 0;
     scoreElem.innerText = 0;
     generateQuestion();
-    startTimer(120, timer);
+    startTimer(20, timer);
     isTimerRunning = true;
 }
 
@@ -161,29 +133,10 @@ option3.addEventListener("click", function() {
     }
     generateQuestion();
 });
-option4.addEventListener("click", function() {
-    if (validAnswer(option4.innerText)) {
-        incrementScore();
-    }
-    else {
-        // Show error
-        console.log("err");
-        decreaseScore();
-    }
-    generateQuestion();
-});
 
 btnSkip.addEventListener("click", function() {
     generateQuestion();
 });
-
-// BBZLD_02: to solve multiple clicks on timer
-// timer.addEventListener("click", function() {
-//     var duration = 5;
-//     startTimer(5, timer);
-//     isTimerRunning = true;
-//     // console.log("isTimerRunning: " + isTimerRunning);
-// });
 
 function startTimer(duration, display) {
     var start = Date.now(), diff, minutes, seconds;
@@ -201,7 +154,6 @@ function startTimer(duration, display) {
             clearInterval(intervalId);
             isTimerRunning = false;
             stopGame();
-            // console.log("isTimerRunning: " + isTimerRunning);
         }
     }
     timer();
@@ -216,14 +168,12 @@ function generateQuestion() {
     // Update answer and DOM
     question.innerText = data.q;
     answer = data.a;
-    // console.log("answer is " + answer);
-    var optionsArr = [option1, option2, option3, option4];
+    var optionsArr = [option1, option2, option3];
     optionsArr = shuffleArray(optionsArr);
 
     optionsArr[0].innerText = data.first;
     optionsArr[1].innerText = data.second;
     optionsArr[2].innerText = data.a;
-    optionsArr[3].innerText = data.third;
 }
 
 function validAnswer(str) {

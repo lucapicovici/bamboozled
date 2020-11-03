@@ -77,6 +77,102 @@ var questions = [
         first: "Caragiale",
         second: "Chaplin"
     },
+    {
+        q: "Am o căsuță mică...",
+        a: "Așa, așa, așa",
+        first: "I-așe ni, păi ui așa și iar așa",
+        second: "I-așe ni"
+    },
+    {
+        q: "Când eram tânăr fecior...",
+        a: "Eram fala munților",
+        first: "Eram spaima fetelor",
+        second: "Eram tânăr"
+    },
+    {
+        q: "Foaie verde și-o custură...",
+        a: "Să nu-i pici la Koty-n gură",
+        first: "Doamne feri s-o iau pă arătură",
+        second: "Ceva cu rimă la final"
+    },
+    {
+        q: "Domn detectiv, ...",
+        a: "Detectami-ai p**a",
+        first: "Mereț' de pe fânu' meu",
+        second: "Cum e la oraș?"
+    },
+    {
+        q: "Avem de-a face...",
+        a: "C-un criminal foarte mârșav",
+        first: "Cu încălzirea globală",
+        second: "Cu mă-ta"
+    },
+    {
+        q: "No bă Vasy, bă, ...",
+        a: "Eu vin să iau iapa, mă duc după niște lemne",
+        first: "Îmi dai un caltaboș de Crăciun?",
+        second: "Cheamă-l pă Baltazar"
+    },
+    {
+        q: "Alcoolul...",
+        a: "Te omoară. Te sfințește. Nu stă să glumească cu tine.",
+        first: "Stimulează pofta de condus autovehicule",
+        second: "Ochiul răului"
+    },
+    {
+        q: "Țuica de prune...",
+        a: "Vindecă 6 boli și pe a 7-a o tămăduiește",
+        first: "E făcută la cazan",
+        second: "Conține alcool"
+    },
+    {
+        q: "Am o căsuță mică...",
+        a: "Așa, așa, așa",
+        first: "I-așe ni, păi ui așa și iar așa",
+        second: "I-așe ni"
+    },
+    {
+        q: "Domnul plutonier, cifra octanică circulă în amândoi și în momentul de față, dar cu cadavrul ăsta avem o problemă...",
+        a: "Bă, la mine nu circulă nimeni numa cât are limita de viteză",
+        first: "Domn detectiv, o fi avut greutăți la servici",
+        second: "O fi avut greutăți cu calu"
+    },
+    {
+        q: "Moartea...",
+        a: "Când vine, vine...Asta te caută, mă, nu te iartă. Te seceră.",
+        first: "Te pândește la colț",
+        second: "E un nou început pentru sufletele noastre"
+    },
+    {
+        q: "Când afară e frig...",
+        a: "Marin, pahar!",
+        first: "Ne îmbrăcăm adecvat",
+        second: "Stăm în casă"
+    },
+    {
+        q: "Ce cauți la armată?",
+        a: "Am auzit că se plătește bine",
+        first: "O zis mama să mă fac bărbat, că-s incorigibil",
+        second: "Vreau să am ocazia să conduc o amfibie cu două motoare, dublu ambreiaj"
+    },
+    {
+        q: "De ce nu ai ajuns la oră online?",
+        a: "A trecut o basculă pe lângă casă și mi-a rupt cablul de net",
+        first: "Nu s-a combinat bine laptele ăla bătut cu berea",
+        second: "N-a mai plătit vecinul internetul"
+    },
+    {
+        q: "De ce te-ai culcat așa târziu?",
+        a: "Am scris poezii de dragoste",
+        first: "Mia Khalifa",
+        second: "9GAG"
+    },
+    {
+        q: "Bulă...",
+        a: "Este un personaj clasic al multor opere de artă",
+        first: "Îi prieten cu tată-to",
+        second: "E ăla cu bancurile"
+    },
 ];
 
 var btnSkip = document.querySelector("#btnSkip");

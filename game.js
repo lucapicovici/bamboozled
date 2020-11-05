@@ -39,7 +39,7 @@ var questions = [
         q: "De ce Trump arată ca o portocală?",
         a: "Așa s-a născut",
         first: "De la tratamentul anti-COVID",
-        second: "Taică-so a încercat tot felul de jucării sexuale"
+        second: "Taică-so mănâncă 2kg de fructe pe zi"
     },
     {
         q: "Bolognaise sau carbonara?",
@@ -97,7 +97,7 @@ var questions = [
     },
     {
         q: "Domn detectiv, ...",
-        a: "Detectami-ai p**a",
+        a: "Numa-ncet să nu te-mpiedici",
         first: "Mereț' de pe fânu' meu",
         second: "Cum e la oraș?"
     },
@@ -173,6 +173,18 @@ var questions = [
         first: "Îi prieten cu tată-to",
         second: "E ăla cu bancurile"
     },
+    {
+        q: "De ce îl cheamă Florin Salam?",
+        a: "Tată-so, flămând, l-o strigat să aducă mâncare din frigider",
+        first: "Florin la tablă nu mergea",
+        second: "Inițial și-a deschis un magazin alimentar cu slană și caltaboș și a decis să păstreze numele"
+    },
+    {
+        q: "De ce îl cheamă Sandu Ciorbă?",
+        a: "Pasionat fiind de mâncăruri tradiționale, Alexandru cel excentric a analizat cu mare atenție piața și a decis să aducă ceva nou",
+        first: "Mein Fuhrer nu ar fi fost de acord ca lumea să asocieze greșit SS cu Sandu Supă",
+        second: "E ăla cu bancurile"
+    },
 ];
 
 var btnSkip = document.querySelector("#btnSkip");
@@ -186,48 +198,34 @@ var isTimerRunning = false;
 var scoreElem = document.querySelector("#score");
 var answer = "";
 var score = 0;
+var setTime = 2000;
 
 // Initialize game
 window.onload = function() {
     score = 0;
     scoreElem.innerText = 0;
     generateQuestion();
-    startTimer(20, timer);
+    startTimer(setTime, timer);
     isTimerRunning = true;
 }
 
-option1.addEventListener("click", function() {
-    if (validAnswer(option1.innerText)) {
-        incrementScore();
-    }
-    else {
-        // Show error
-        console.log("err");
-        decreaseScore();
-    }
-    generateQuestion();
-});
-option2.addEventListener("click", function() {
-    if (validAnswer(option2.innerText)) {
-        incrementScore();   
-    }
-    else {
-        // Show error
-        console.log("err");
-        decreaseScore();
-    }
-    generateQuestion();
-});
-option3.addEventListener("click", function() {
-    if (validAnswer(option3.innerText)) {
-        incrementScore();
-    }
-    else {
-        // Show error
-        console.log("err");
-        decreaseScore();
-    }
-    generateQuestion();
+document.querySelectorAll(".optionBox").forEach(function(option){
+    option.addEventListener("click", function() {
+        if (validAnswer(option.innerText)) {
+            incrementScore();
+        }
+        else {
+            // Show error
+            console.log("err");
+            decreaseScore();
+        }
+        // Animate buttons
+        $(".options-grid").addClass("transform-active");
+        $(".options-grid").on("webkitAnimationEnd otransitionend oTransitionEnd msTransitionEnd transitionend", function() {
+            $(this).removeClass("transform-active");
+        })
+        generateQuestion();
+    });
 });
 
 btnSkip.addEventListener("click", function() {
@@ -257,6 +255,8 @@ function startTimer(duration, display) {
 }
 
 function generateQuestion() {
+    // BBZLD_02: Intrebarile la care s-a raspuns vor fi excluse
+
     var questionsCount = questions.length;
     var randomIndex = Math.floor(Math.random() * questionsCount);
     var data = questions[randomIndex];

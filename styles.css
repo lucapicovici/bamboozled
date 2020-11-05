@@ -2,6 +2,9 @@
 
 body {
     font-family: "Grandstander", cursive;
+    background: #56CCF2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2F80ED, #56CCF2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 a {
@@ -63,6 +66,9 @@ a {
 #titleIndex {
     color: orange;
     text-align: center;
+    font-size: 2.5em;
+    text-shadow: 1px 1px 1px black;
+    animation: fadeInTitle 0.5s ease-out;
 }
 
 .buttonsIndex {
@@ -70,6 +76,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    animation: fadeInButtons 0.5s ease-out;
 }
 
 #startIndex, #leaderboardIndex {
@@ -126,4 +133,30 @@ a {
     justify-content: center;
     align-items: center;
     padding-top: 200px;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.transform-active {
+    animation: fadeQuestions 1s linear;
+}
+
+@keyframes fadeInTitle {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+}
+
+@keyframes fadeInButtons {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
+
+@keyframes fadeQuestions {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
 }

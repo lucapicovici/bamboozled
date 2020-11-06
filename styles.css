@@ -138,7 +138,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 200px;
+    padding-top: 150px;
     animation: fadeIn 0.5s ease-out;
 }
 

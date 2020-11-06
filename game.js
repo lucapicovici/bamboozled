@@ -187,6 +187,39 @@ var questions = [
     },
 ];
 
+var questions2 = [
+    {
+        q: "Când e ziua lui Luca?",
+        a: "15 Dec 1998",
+        first: "13 Dec 1999",
+        second: "Vezi Facebook",
+    },
+    {
+        q: "Câte picioare are un câine care stă în două picioare?",
+        a: "Minim 2, maxim 4",
+        first: "Maxim 4, minim 5",
+        second: "2,50"
+    },
+    {
+        q: "Ce e o zi de naștere?",
+        a: "Tot o zi, doar că ți se duc 50 lei",
+        first: "O zi",
+        second: "Când trebuie să stai până la 11 noaptea să îi scrii la mulți ani"
+    },
+    {
+        q: "De ce Trump arată ca o portocală?",
+        a: "Așa s-a născut",
+        first: "De la tratamentul anti-COVID",
+        second: "Taică-so mănâncă 2kg de fructe pe zi"
+    },
+    {
+        q: "Bolognaise sau carbonara?",
+        a: "Bolognaise, că-i cu porodici",
+        first: "Pesto",
+        second: "Carbonara"
+    }
+];
+
 var btnSkip = document.querySelector("#btnSkip");
 var question = document.querySelector("#question");
 var optionBox = document.querySelector(".optionBox");
@@ -196,6 +229,7 @@ var option3 = document.querySelector("#option3");
 var timer = document.querySelector("#timer");
 var isTimerRunning = false;
 var scoreElem = document.querySelector("#score");
+var excludeIndexes = [];
 var answer = "";
 var score = 0;
 var setTime = 2000;
@@ -204,9 +238,9 @@ var setTime = 2000;
 window.onload = function() {
     score = 0;
     scoreElem.innerText = 0;
+    excludeIndexes = [];
     generateQuestion();
     startTimer(setTime, timer);
-    isTimerRunning = true;
 }
 
 document.querySelectorAll(".optionBox").forEach(function(option){
@@ -216,7 +250,7 @@ document.querySelectorAll(".optionBox").forEach(function(option){
         }
         else {
             // Show error
-            console.log("err");
+            // console.log("err");
             decreaseScore();
         }
         // Animate buttons
@@ -258,7 +292,28 @@ function generateQuestion() {
     // BBZLD_01: Intrebarile la care s-a raspuns vor fi excluse
 
     var questionsCount = questions.length;
+
+    // Generate random index
     var randomIndex = Math.floor(Math.random() * questionsCount);
+
+    // Reset array to avoid infinite loop of generating random indexes
+    if (excludeIndexes.length === questions.length) {
+        excludeIndexes = [];
+        console.log("***clear***");
+    }
+
+    // Check array if it has been already generated
+    while (excludeIndexes.indexOf(randomIndex) >= 0) {
+        // If not, generate again
+        randomIndex = Math.floor(Math.random() * questionsCount);
+    }
+    console.log(`Generated #${randomIndex}`);
+
+    // Exclude random index
+    excludeIndexes.push(randomIndex);
+    console.log(`Add #${randomIndex}`);
+
+    // Pick a new question
     var data = questions[randomIndex];
 
     // Update answer and DOM

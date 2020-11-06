@@ -30,12 +30,6 @@ var questions = [
         second: "Nu se pune problema pentru că două ajung la o masă"
     },
     {
-        q: "De ce Roboții și nu Unguru Bulan?",
-        a: "Pentru că Roboții au grafică mai bună, un limbaj mai sofisticat și glume mai inteligente",
-        first: "Pentru că Robotii te duce cu gândul la AI, și AI-ul îi șmecher",
-        second: "Creative Monkeyz"
-    },
-    {
         q: "De ce Trump arată ca o portocală?",
         a: "Așa s-a născut",
         first: "De la tratamentul anti-COVID",
@@ -185,6 +179,12 @@ var questions = [
         first: "Mein Fuhrer nu ar fi fost de acord ca lumea să asocieze greșit SS cu Sandu Supă",
         second: "E ăla cu bancurile"
     },
+    {
+        q: "De ce nu se pune prea multă zacuscă cu ciuperci pe pită?",
+        a: "Se rupe pita în bucăți",
+        first: "Ca să nu te îngrași",
+        second: "Ca să poți mânca și felul doi"
+    },
 ];
 
 var btnSkip = document.querySelector("#btnSkip");
@@ -255,7 +255,7 @@ function startTimer(duration, display) {
 }
 
 function generateQuestion() {
-    // BBZLD_02: Intrebarile la care s-a raspuns vor fi excluse
+    // BBZLD_01: Intrebarile la care s-a raspuns vor fi excluse
 
     var questionsCount = questions.length;
     var randomIndex = Math.floor(Math.random() * questionsCount);

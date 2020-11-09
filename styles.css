@@ -45,6 +45,14 @@ a {
     overflow-wrap: break-word;
 }
 
+.wrongAnswer {
+    background-color: red;
+}
+
+.correctAnswer {
+    background-color: green;
+}
+
 #question {
     text-align: center;
     color: white;
@@ -91,7 +99,7 @@ a {
     align-items: center;
     height: 50px;
     width: 150px;
-    background-color: green;
+    background-color: #ffec8f;
     border-radius: 7px;
     margin: 5px;
 }
@@ -143,7 +151,7 @@ a {
 }
 
 .transform-active {
-    animation: fadeQuestions 1s linear;
+    animation: fadeQuestions 0.5s linear;
 }
 
 @keyframes fadeInTitle {

@@ -232,7 +232,7 @@ var scoreElem = document.querySelector("#score");
 var excludeIndexes = [];
 var answer = "";
 var score = 0;
-var setTime = 2000;
+var setTime = 120;
 
 // Initialize game
 window.onload = function() {
@@ -246,19 +246,23 @@ window.onload = function() {
 document.querySelectorAll(".optionBox").forEach(function(option){
     option.addEventListener("click", function() {
         if (validAnswer(option.innerText)) {
+            // Change color to green
+            $(option).addClass("correctAnswer");
             incrementScore();
         }
         else {
-            // Show error
-            // console.log("err");
+            // Change color to red
+            $(option).addClass("wrongAnswer");
             decreaseScore();
         }
-        // Animate buttons
-        $(".options-grid").addClass("transform-active");
-        $(".options-grid").on("webkitAnimationEnd otransitionend oTransitionEnd msTransitionEnd transitionend", function() {
-            $(this).removeClass("transform-active");
-        })
-        generateQuestion();
+        // Animate buttons when animation finished
+        setTimeout(function() {
+            $(".options-grid").addClass("transform-active");
+            $(".options-grid").on("webkitAnimationEnd otransitionend oTransitionEnd msTransitionEnd transitionend", function() {
+                $(this).removeClass("transform-active");
+            });
+            generateQuestion();
+        }, 500)
     });
 });
 
@@ -289,7 +293,11 @@ function startTimer(duration, display) {
 }
 
 function generateQuestion() {
-    // BBZLD_01: Intrebarile la care s-a raspuns vor fi excluse
+    // Clear validating answer classes
+    document.querySelectorAll(".optionBox").forEach(function(option){
+        $(option).removeClass("wrongAnswer");
+        $(option).removeClass("correctAnswer");
+    });
 
     var questionsCount = questions.length;
 

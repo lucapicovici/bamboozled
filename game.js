@@ -185,6 +185,66 @@ var questions = [
         first: "Ca să nu te îngrași",
         second: "Ca să poți mânca și felul doi"
     },
+    {
+        q: "Cu ce se droghează albinele?",
+        a: "Propolis",
+        first: "Sânge de viespe",
+        second: "Ketchup"
+    },
+    {
+        q: "Care e locul preferat al unei scame?",
+        a: "Ombilicul",
+        first: "Pe tastatura de la laptop",
+        second: "În urechi"
+    },
+    {
+        q: "Care este mâncarea favorita a unui african?",
+        a: "Nu este",
+        first: "Carne de vită la cuptor cu sos curry și pătrunjel",
+        second: "Unghiile"
+    },
+    {
+        q: "Cum faci o femeie să accepte deciziile tale?",
+        a: "Oamenii de știință încă cercetează acest lucru",
+        first: "Îi dai un ultimatum",
+        second: "O rogi frumos"
+    },
+    {
+        q: "Cum exciți o femeie?",
+        a: "După ce ai spălat vasele și ai dat cu mopul, te duci să cumperi ciocolată pentru că i s-a terminat",
+        first: "Un cunnilingus de-ăla așa cum trebuie",
+        second: "Îi scrii o poezie de dragoste pe care i-o trimiți printr-un porumbel alb"
+    },
+    {
+        q: "Câte găuri are o femeie între picioare?",
+        a: "3",
+        first: "1",
+        second: "2"
+    },
+    {
+        q: "Care este leguma favorită a lui Hitler?",
+        a: "Arde-i iute",
+        first: "Castravetele",
+        second: "Ceapa"
+    },
+    {
+        q: "Câte degete are un om fără degete la mână?",
+        a: "10, că le mai are pe alea de la picioare",
+        first: "0",
+        second: "5"
+    },
+    {
+        q: "Cum faci o femeie să te urască?",
+        a: "Nu-ți speli blidu' după ce mănânci, și mai și puți a bere",
+        first: "O gâdili până nu mai poate",
+        second: "Ești convins că verdele și turcoazul sunt același lucru"
+    },
+    {
+        q: "Cum îl enervezi pe tipul de la GuitarShop încât să te dea afară?",
+        a: "0 3 5",
+        first: "Pui mâna jegoasă pe toate chitarele fără permisiunea lui",
+        second: "Îi vorbești urât"
+    },
 ];
 
 var questions2 = [

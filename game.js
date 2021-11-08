@@ -211,7 +211,7 @@ var questions = [
     },
     {
         q: "Cum exciți o femeie?",
-        a: "După ce ai spălat vasele și ai dat cu mopul, te duci să cumperi ciocolată pentru că i s-a terminat",
+        a: "După ce ai spălat vasele și ai dat cu mopul, te duci să cumperi ciocolată belgiană",
         first: "Un cunnilingus de-ăla așa cum trebuie",
         second: "Îi scrii o poezie de dragoste pe care i-o trimiți printr-un porumbel alb"
     },
@@ -244,6 +244,24 @@ var questions = [
         a: "0 3 5",
         first: "Pui mâna jegoasă pe toate chitarele fără permisiunea lui",
         second: "Îi vorbești urât"
+    },
+    {
+        q: "Ce semnificație are dacă îi oferi cuiva 10 bani?",
+        a: "Faci o conexiune emoțională cu persoana respectivă",
+        first: "Îi dai pentru că e sărac",
+        second: "Îl ajuți să-și strângă bani pentru o masă caldă"
+    },
+    {
+        q: "Cum se dansează mișto la o horă?",
+        a: "Stai în cap",
+        first: "Dai din mâini și din picioare",
+        second: "Te învârți"
+    },
+    {
+        q: "Ce faci dacă îl ai pe Jim Morrison în studio și e prea fumat ca să mai cânte bine?",
+        a: "O pui pe gagică-sa să-i ofere un BJ",
+        first: "Ai răbdare cu el",
+        second: "Îl rogi să vină în altă zi"
     },
 ];
 
